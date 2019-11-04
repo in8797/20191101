@@ -9,9 +9,16 @@ public class MemberDto {
 	private String grant;
 	private Date date;
 	private String addr;
-	
+
 	public MemberDto() {
-		// TODO Auto-generated constructor stub
+	}
+
+	public MemberDto(String id, String name, String pw, String addr) {
+		super();
+		this.id = id;
+		this.name = name;
+		this.pw = pw;
+		this.addr = addr;
 	}
 
 	public String getId() {
@@ -61,6 +68,5 @@ public class MemberDto {
 	public void setAddr(String addr) {
 		this.addr = addr;
 	}
-	
-	
+
 }
